@@ -33,7 +33,7 @@ export default function HeroSection() {
         />
 
         <motion.p
-          className="font-heading text-salsa-yellow text-xl md:text-3xl italic mb-8"
+          className="font-body text-salsa-yellow text-xl md:text-3xl italic mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
