@@ -4,6 +4,11 @@ import guayacan from "@/assets/guayacan-orquesta.jpg";
 import la33 from "@/assets/la-33.jpg";
 import willie from "@/assets/willie-gonzalez.jpg";
 import ruben from "@/assets/ruben-blades.jpg";
+import gilberto from "@/assets/gilberto-santa-rosa.jpg";
+import marc from "@/assets/marc-anthony.jpg";
+import eddy from "@/assets/eddy-santiago.jpg";
+import maelo from "@/assets/maelo-ruiz.jpg";
+import fruko from "@/assets/fruko-y-sus-tesos.jpg";
 
 const artists = [
   { name: "Grupo Niche", img: grupoNiche },
@@ -11,6 +16,11 @@ const artists = [
   { name: "La-33", img: la33 },
   { name: "Willie González", img: willie },
   { name: "Rubén Blades", img: ruben },
+  { name: "Gilberto Santa Rosa", img: gilberto },
+  { name: "Marc Anthony", img: marc },
+  { name: "Eddy Santiago", img: eddy },
+  { name: "Maelo Ruiz", img: maelo },
+  { name: "Fruko y sus Tesos", img: fruko },
 ];
 
 export default function LineupSection() {
@@ -36,7 +46,7 @@ export default function LineupSection() {
           10 artistas, una sola tarima, pura salsa
         </motion.p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
           {artists.map((a, i) => (
             <motion.div
               key={a.name}
