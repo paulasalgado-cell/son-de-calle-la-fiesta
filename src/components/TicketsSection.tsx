@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import patternImg from "@/assets/pattern-red-yellow.jpeg";
 
 const tiers = [
   {
@@ -29,12 +28,6 @@ const tiers = [
 export default function TicketsSection() {
   return (
     <section id="entradas" className="relative py-20 md:py-28 overflow-hidden">
-      {/* Pattern background */}
-      <div className="absolute inset-0 opacity-10">
-        <img src={patternImg} alt="" className="w-full h-full object-cover" loading="lazy" />
-      </div>
-      <div className="absolute inset-0 bg-salsa-black/80" />
-
       <div className="relative z-10 max-w-5xl mx-auto px-4">
         <motion.h2
           className="font-heading text-4xl md:text-6xl text-center text-gradient-salsa mb-14"

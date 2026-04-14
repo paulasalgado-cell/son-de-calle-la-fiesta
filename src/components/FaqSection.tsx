@@ -27,7 +27,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section id="faq" className="py-20 md:py-28 bg-gradient-to-b from-salsa-crimson/10 to-salsa-black">
+    <section id="faq" className="py-20 md:py-28">
       <div className="max-w-3xl mx-auto px-4">
         <motion.h2
           className="font-heading text-4xl md:text-6xl text-center text-gradient-salsa mb-14"

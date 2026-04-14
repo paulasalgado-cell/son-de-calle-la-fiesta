@@ -25,7 +25,7 @@ const artists = [
 
 export default function LineupSection() {
   return (
-    <section id="lineup" className="py-20 md:py-28 bg-gradient-to-b from-salsa-black to-salsa-crimson/15">
+    <section id="lineup" className="py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
           className="font-heading text-4xl md:text-6xl text-center text-gradient-salsa mb-4"

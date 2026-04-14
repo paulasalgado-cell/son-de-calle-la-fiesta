@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { CalendarDays, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
-import pattern from "@/assets/pattern-salsa.jpg";
 
 export default function HeroSection() {
   return (
@@ -9,18 +8,6 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Pattern background */}
-      <div className="absolute inset-0">
-        <img
-          src={pattern}
-          alt=""
-          className="w-full h-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-salsa-black/70" />
-      </div>
-
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-20">
         <motion.img
