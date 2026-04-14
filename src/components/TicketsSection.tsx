@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import patternImg from "@/assets/pattern-red-yellow.jpeg";
 
 const tiers = [
   {
