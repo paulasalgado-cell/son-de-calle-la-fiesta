@@ -7,6 +7,7 @@ import ExperienciasSection from "@/components/ExperienciasSection";
 import TicketsSection from "@/components/TicketsSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
+import pattern from "@/assets/pattern-salsa.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -14,15 +15,24 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <LineupSection />
-      <InfoSection />
-      <ExperienciasSection />
-      <TicketsSection />
-      <FaqSection />
-      <Footer />
-    </>
+    <div className="relative">
+      {/* Fixed pattern background for entire page */}
+      <div
+        className="fixed inset-0 z-0"
+        style={{ backgroundImage: `url(${pattern})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      />
+      <div className="fixed inset-0 z-0 bg-salsa-black/75" />
+
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <LineupSection />
+        <InfoSection />
+        <ExperienciasSection />
+        <TicketsSection />
+        <FaqSection />
+        <Footer />
+      </div>
+    </div>
   );
 }

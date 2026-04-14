@@ -3,7 +3,7 @@ import { Clock, MapPin, Bus, Car } from "lucide-react";
 
 export default function InfoSection() {
   return (
-    <section id="info" className="py-20 md:py-28 bg-gradient-to-b from-salsa-black to-salsa-crimson/20">
+    <section id="info" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           className="font-heading text-4xl md:text-6xl text-center text-gradient-salsa mb-14"

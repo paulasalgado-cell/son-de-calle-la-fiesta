@@ -26,7 +26,7 @@ const experiences = [
 
 export default function ExperienciasSection() {
   return (
-    <section id="experiencias" className="py-20 md:py-28 bg-gradient-to-b from-salsa-crimson/15 to-salsa-black">
+    <section id="experiencias" className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           className="font-heading text-4xl md:text-6xl text-center text-gradient-salsa mb-4"
