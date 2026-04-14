@@ -21,7 +21,7 @@ function Index() {
         className="fixed inset-0 z-0"
         style={{ backgroundImage: `url(${pattern})`, backgroundSize: "cover", backgroundPosition: "center" }}
       />
-      <div className="fixed inset-0 z-0 bg-salsa-black/75" />
+      <div className="fixed inset-0 z-0 bg-salsa-black/88" />
 
       <div className="relative z-10">
         <Navbar />
