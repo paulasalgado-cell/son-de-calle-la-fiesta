@@ -33,9 +33,11 @@ export const Route = createRootRoute({
       { name: "description", content: "El festival de salsa más grande de Bogotá. Grupo Niche, Rubén Blades, Marc Anthony y más. 21 de noviembre de 2026, Parque el Country." },
       { name: "author", content: "Son de Calle" },
       { property: "og:title", content: "Son de Calle — Festival de Salsa · Bogotá 2026" },
-      { property: "og:description", content: "Aquí no se camina... Aquí se baila. 10 artistas, una sola tarima, pura salsa." },
+      { property: "og:description", content: "El festival de salsa más grande de Bogotá. Grupo Niche, Rubén Blades, Marc Anthony y más. 21 de noviembre de 2026, Parque el Country." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Son de Calle — Festival de Salsa · Bogotá 2026" },
+      { name: "twitter:description", content: "El festival de salsa más grande de Bogotá. Grupo Niche, Rubén Blades, Marc Anthony y más. 21 de noviembre de 2026, Parque el Country." },
     ],
     links: [
       {
