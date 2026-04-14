@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { CalendarDays, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 import logo from "@/assets/logo.png";
 import pattern from "@/assets/pattern-salsa.jpg";
 
@@ -10,27 +9,16 @@ export default function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background */}
+      {/* Pattern background */}
       <div className="absolute inset-0">
-        <img
-          src={heroBg}
-          alt="Festival Son de Calle"
-          className="w-full h-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-salsa-black via-salsa-black/70 to-salsa-black/40" />
-      </div>
-
-      {/* Pattern decorative strip top */}
-      <div className="absolute top-0 left-0 right-0 h-16 md:h-24 overflow-hidden opacity-30">
         <img
           src={pattern}
           alt=""
           className="w-full h-full object-cover"
-          aria-hidden="true"
+          width={1920}
+          height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-salsa-black" />
+        <div className="absolute inset-0 bg-salsa-black/70" />
       </div>
 
       {/* Content */}
@@ -45,7 +33,7 @@ export default function HeroSection() {
         />
 
         <motion.p
-          className="font-body text-salsa-yellow text-lg md:text-2xl italic mb-8"
+          className="font-body text-salsa-yellow text-base md:text-lg italic mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}

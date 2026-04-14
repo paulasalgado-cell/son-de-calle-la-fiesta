@@ -33,7 +33,7 @@ export default function TicketsSection() {
       <div className="absolute inset-0 opacity-10">
         <img src={patternImg} alt="" className="w-full h-full object-cover" loading="lazy" />
       </div>
-      <div className="absolute inset-0 bg-salsa-black/90" />
+      <div className="absolute inset-0 bg-salsa-black/80" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-4">
         <motion.h2

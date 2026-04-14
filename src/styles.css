@@ -58,31 +58,31 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.1 0.02 30);
+  --background: oklch(0.18 0.04 30);
   --foreground: oklch(0.95 0.01 90);
-  --card: oklch(0.15 0.02 30);
+  --card: oklch(0.22 0.04 30);
   --card-foreground: oklch(0.95 0.01 90);
-  --popover: oklch(0.15 0.02 30);
+  --popover: oklch(0.22 0.04 30);
   --popover-foreground: oklch(0.95 0.01 90);
   --primary: oklch(0.55 0.22 30);
   --primary-foreground: oklch(0.98 0.01 90);
   --secondary: oklch(0.88 0.18 95);
   --secondary-foreground: oklch(0.1 0.02 30);
-  --muted: oklch(0.2 0.02 30);
-  --muted-foreground: oklch(0.7 0.03 90);
+  --muted: oklch(0.26 0.04 30);
+  --muted-foreground: oklch(0.72 0.04 90);
   --accent: oklch(0.88 0.18 95);
   --accent-foreground: oklch(0.1 0.02 30);
   --destructive: oklch(0.45 0.25 25);
   --destructive-foreground: oklch(0.98 0.01 90);
-  --border: oklch(0.25 0.03 30);
-  --input: oklch(0.25 0.03 30);
+  --border: oklch(0.32 0.05 30);
+  --input: oklch(0.32 0.05 30);
   --ring: oklch(0.55 0.22 30);
 
   /* Festival palette */
   --salsa-red: oklch(0.55 0.22 30);
   --salsa-crimson: oklch(0.45 0.25 25);
   --salsa-yellow: oklch(0.88 0.18 95);
-  --salsa-black: oklch(0.1 0.02 30);
+  --salsa-black: oklch(0.15 0.03 30);
   --salsa-gold: oklch(0.78 0.15 85);
 
   --chart-1: oklch(0.55 0.22 30);
@@ -90,13 +90,13 @@
   --chart-3: oklch(0.45 0.25 25);
   --chart-4: oklch(0.78 0.15 85);
   --chart-5: oklch(0.65 0.2 40);
-  --sidebar: oklch(0.12 0.02 30);
+  --sidebar: oklch(0.16 0.03 30);
   --sidebar-foreground: oklch(0.95 0.01 90);
   --sidebar-primary: oklch(0.55 0.22 30);
   --sidebar-primary-foreground: oklch(0.98 0.01 90);
-  --sidebar-accent: oklch(0.2 0.02 30);
+  --sidebar-accent: oklch(0.26 0.04 30);
   --sidebar-accent-foreground: oklch(0.95 0.01 90);
-  --sidebar-border: oklch(0.25 0.03 30);
+  --sidebar-border: oklch(0.32 0.05 30);
   --sidebar-ring: oklch(0.55 0.22 30);
 }
 
