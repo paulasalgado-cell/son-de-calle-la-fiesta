@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CalendarDays, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-amarillo.png";
 
 export default function HeroSection() {
   return (
@@ -12,21 +12,12 @@ export default function HeroSection() {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-20">
         <motion.img
           src={logo}
-          alt="Son de Calle"
-          className="mx-auto h-28 md:h-44 invert mb-6"
+          alt="Son de Calle - Aquí no se camina, aquí se baila"
+          className="mx-auto h-64 md:h-96 mb-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         />
-
-        <motion.p
-          className="font-body text-salsa-yellow text-base md:text-lg italic mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          Aquí no se camina... Aquí se baila.
-        </motion.p>
 
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 text-foreground/80"
