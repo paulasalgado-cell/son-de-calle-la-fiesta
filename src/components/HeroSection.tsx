@@ -13,7 +13,7 @@ export default function HeroSection() {
         <motion.img
           src={logo}
           alt="Son de Calle - Aquí no se camina, aquí se baila"
-          className="mx-auto h-64 md:h-96 mb-8"
+          className="mx-auto h-44 md:h-64 mb-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
