@@ -11,16 +11,16 @@ import maelo from "@/assets/maelo-ruiz.jpg";
 import fruko from "@/assets/fruko-y-sus-tesos.jpg";
 
 const artists = [
-  { name: "Grupo Niche", img: grupoNiche, spotify: "https://open.spotify.com/artist/0DCqWphwGSUYnQ6IKkHUGh" },
-  { name: "Guayacán Orquesta", img: guayacan, spotify: "https://open.spotify.com/artist/2EU9NKbmXTQcQAoEEjThFw" },
-  { name: "La-33", img: la33, spotify: "https://open.spotify.com/artist/4FpJcNgDcZ2bLkGHWnSCgU" },
-  { name: "Willie González", img: willie, spotify: "https://open.spotify.com/artist/5tlNJfV9UYg4Tl4tMR4Vjo" },
-  { name: "Rubén Blades", img: ruben, spotify: "https://open.spotify.com/artist/2gpWyfv76EvyzaaDsdvHV3" },
-  { name: "Gilberto Santa Rosa", img: gilberto, spotify: "https://open.spotify.com/artist/4OBJLual30L7gRl5UkeRcT" },
-  { name: "Marc Anthony", img: marc, spotify: "https://open.spotify.com/artist/2yBxv8kfACJyHtnrcVgwCI" },
-  { name: "Eddy Santiago", img: eddy, spotify: "https://open.spotify.com/artist/1uShH8M5JKXp4HOrI8MtCi" },
-  { name: "Maelo Ruiz", img: maelo, spotify: "https://open.spotify.com/artist/3qwDgYsxLyZ1HQTksPgkfG" },
-  { name: "Fruko y sus Tesos", img: fruko, spotify: "https://open.spotify.com/artist/0wnFifIYBfu4FPb2tDCdRA" },
+  { name: "Grupo Niche", img: grupoNiche, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0S76rS?si=734d8d27a8e54606" },
+  { name: "Guayacán Orquesta", img: guayacan, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1nLWmr?si=9c5749de428b4dc9" },
+  { name: "La-33", img: la33, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO16Xc5O?si=1522fa88d2984cce" },
+  { name: "Willie González", img: willie, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1wDIc3?si=f1c584982c144733" },
+  { name: "Rubén Blades", img: ruben, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3iDsmW?si=cbe11fd424af4520" },
+  { name: "Gilberto Santa Rosa", img: gilberto, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1cExWg?si=bc2dc88f30d84647" },
+  { name: "Marc Anthony", img: marc, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO2EsWju?si=9a5c0c03c54a4234" },
+  { name: "Eddy Santiago", img: eddy, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3v6KpK?si=6eee4a874237462e" },
+  { name: "Maelo Ruiz", img: maelo, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO29Enlw?si=d40ae1858ee54a31" },
+  { name: "Fruko y sus Tesos", img: fruko, spotify: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO32q7NX?si=eb8103ac6f8745fe" },
 ];
 
 export default function LineupSection() {
