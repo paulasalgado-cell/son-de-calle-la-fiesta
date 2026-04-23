@@ -12,25 +12,25 @@ const socials = [
   {
     name: "Instagram",
     handle: "@sondecallefest",
-    href: "https://www.instagram.com/sondecallefest",
+    href: "https://www.instagram.com/sondecallefest?igsh=eGdncnA5Z242ZzJo",
     Icon: Instagram,
   },
   {
     name: "TikTok",
     handle: "@sondecallefest",
-    href: "https://tiktok.com/@sondecallefest",
+    href: "https://www.tiktok.com/@sondecallefest",
     Icon: TikTokIcon,
   },
   {
     name: "Facebook",
     handle: "Son de Calle Fest",
-    href: "https://facebook.com/share/17Q2PxN9Af/?mibextid=wwXIfr",
+    href: "https://www.facebook.com/share/17Q2PxN9Af/?mibextid=wwXIfr",
     Icon: Facebook,
   },
   {
     name: "YouTube",
     handle: "@sondecallefest",
-    href: "https://youtube.com/@sondecallefest",
+    href: "https://www.youtube.com/@sondecallefest?si=3qeaA_AiY0ERHe0E",
     Icon: Youtube,
   },
 ];
