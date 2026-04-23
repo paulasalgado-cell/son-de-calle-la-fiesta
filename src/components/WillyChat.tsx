@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useServerFn } from "@tanstack/react-start";
-import { X, Send, MessageCircle } from "lucide-react";
+import { X, Send } from "lucide-react";
 import { willyChat } from "@/utils/willy-chat.functions";
 import willyImg from "@/assets/willy.png";
 
@@ -52,7 +52,7 @@ export default function WillyChat() {
   if (closed) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-3 right-3 sm:bottom-4 sm:right-4 z-50 flex flex-col items-end gap-2">
       <AnimatePresence>
         {open && (
           <motion.div
@@ -61,7 +61,7 @@ export default function WillyChat() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ duration: 0.2 }}
-            className="w-[320px] sm:w-[380px] h-[480px] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="w-[calc(100vw-1.5rem)] max-w-[360px] sm:max-w-[380px] h-[70vh] max-h-[480px] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="flex items-center gap-3 p-3 bg-gradient-to-r from-salsa-red/90 to-salsa-red border-b border-border">
@@ -136,31 +136,38 @@ export default function WillyChat() {
         )}
       </AnimatePresence>
 
-      {/* Floating bubble button */}
-      <div className="relative">
-        {!open && (
+      {/* Willy character button (no bubble) */}
+      {!open && (
+        <div className="relative">
           <button
             onClick={() => setClosed(true)}
             aria-label="Cerrar Willy"
-            className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-salsa-black border border-border text-white/80 hover:text-white text-xs flex items-center justify-center z-10 shadow-md"
+            className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-salsa-black/90 border border-white/20 text-white/90 hover:text-white text-xs flex items-center justify-center z-10 shadow-md"
           >
             <X size={12} />
           </button>
-        )}
-        <motion.button
-          onClick={() => setOpen((v) => !v)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          aria-label="Abrir chat con Willy"
-          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-salsa-red to-salsa-red/80 shadow-2xl border-2 border-salsa-yellow overflow-hidden flex items-end justify-center"
-        >
-          {open ? (
-            <MessageCircle className="text-white m-auto" size={28} />
-          ) : (
-            <img src={willyImg} alt="Willy" className="w-full h-full object-cover object-top scale-110" />
-          )}
-        </motion.button>
-      </div>
+          <motion.button
+            onClick={() => setOpen(true)}
+            whileHover={{ scale: 1.08, rotate: -3 }}
+            whileTap={{ scale: 0.95 }}
+            animate={{ y: [0, -6, 0] }}
+            transition={{ y: { repeat: Infinity, duration: 2.4, ease: "easeInOut" } }}
+            aria-label="Abrir chat con Willy"
+            className="block"
+            style={{ filter: "drop-shadow(0 6px 12px rgba(0,0,0,0.5))" }}
+          >
+            <img
+              src={willyImg}
+              alt="Willy — tu guía del festival"
+              className="w-20 h-28 sm:w-24 sm:h-32 object-contain"
+            />
+          </motion.button>
+          {/* Hint label */}
+          <div className="absolute -left-2 -translate-x-full top-1/2 -translate-y-1/2 bg-salsa-yellow text-salsa-black text-xs font-semibold px-2 py-1 rounded-lg whitespace-nowrap shadow-md hidden sm:block">
+            ¡Hola! Soy Willy 👋
+          </div>
+        </div>
+      )}
     </div>
   );
 }
