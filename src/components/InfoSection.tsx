@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Clock, MapPin, Bus, Car } from "lucide-react";
+import mapaParque from "@/assets/mapa-parque-country.jpeg";
 
 export default function InfoSection() {
   return (
@@ -78,6 +79,27 @@ export default function InfoSection() {
             />
           </motion.div>
         </div>
+
+        {/* Mapa interno del parque */}
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="font-heading text-2xl md:text-3xl text-center text-gradient-salsa mb-6">
+            Mapa del Festival
+          </h3>
+          <div className="rounded-xl overflow-hidden border border-border bg-card">
+            <img
+              src={mapaParque}
+              alt="Mapa del Parque el Country — zonas del festival Son de Calle"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

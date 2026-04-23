@@ -9,6 +9,7 @@ import FaqSection from "@/components/FaqSection";
 import MerchSection from "@/components/MerchSection";
 import SocialSection from "@/components/SocialSection";
 import Footer from "@/components/Footer";
+import WillyChat from "@/components/WillyChat";
 import pattern from "@/assets/pattern-salsa.jpg";
 
 export const Route = createFileRoute("/")({
@@ -37,6 +38,7 @@ function Index() {
         <SocialSection />
         <Footer />
       </div>
+      <WillyChat />
     </div>
   );
 }
