@@ -6,6 +6,8 @@ import InfoSection from "@/components/InfoSection";
 import ExperienciasSection from "@/components/ExperienciasSection";
 import TicketsSection from "@/components/TicketsSection";
 import FaqSection from "@/components/FaqSection";
+import MerchSection from "@/components/MerchSection";
+import SocialSection from "@/components/SocialSection";
 import Footer from "@/components/Footer";
 import pattern from "@/assets/pattern-salsa.jpg";
 
@@ -31,6 +33,8 @@ function Index() {
         <ExperienciasSection />
         <TicketsSection />
         <FaqSection />
+        <MerchSection />
+        <SocialSection />
         <Footer />
       </div>
     </div>
