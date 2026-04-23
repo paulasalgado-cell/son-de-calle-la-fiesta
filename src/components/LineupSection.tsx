@@ -11,16 +11,16 @@ import maelo from "@/assets/maelo-ruiz.jpg";
 import fruko from "@/assets/fruko-y-sus-tesos.jpg";
 
 const artists = [
-  { name: "Grupo Niche", img: grupoNiche },
-  { name: "Guayacán Orquesta", img: guayacan },
-  { name: "La-33", img: la33 },
-  { name: "Willie González", img: willie },
-  { name: "Rubén Blades", img: ruben },
-  { name: "Gilberto Santa Rosa", img: gilberto },
-  { name: "Marc Anthony", img: marc },
-  { name: "Eddy Santiago", img: eddy },
-  { name: "Maelo Ruiz", img: maelo },
-  { name: "Fruko y sus Tesos", img: fruko },
+  { name: "Grupo Niche", img: grupoNiche, spotify: "https://open.spotify.com/artist/0DCqWphwGSUYnQ6IKkHUGh" },
+  { name: "Guayacán Orquesta", img: guayacan, spotify: "https://open.spotify.com/artist/2EU9NKbmXTQcQAoEEjThFw" },
+  { name: "La-33", img: la33, spotify: "https://open.spotify.com/artist/4FpJcNgDcZ2bLkGHWnSCgU" },
+  { name: "Willie González", img: willie, spotify: "https://open.spotify.com/artist/5tlNJfV9UYg4Tl4tMR4Vjo" },
+  { name: "Rubén Blades", img: ruben, spotify: "https://open.spotify.com/artist/2gpWyfv76EvyzaaDsdvHV3" },
+  { name: "Gilberto Santa Rosa", img: gilberto, spotify: "https://open.spotify.com/artist/4OBJLual30L7gRl5UkeRcT" },
+  { name: "Marc Anthony", img: marc, spotify: "https://open.spotify.com/artist/2yBxv8kfACJyHtnrcVgwCI" },
+  { name: "Eddy Santiago", img: eddy, spotify: "https://open.spotify.com/artist/1uShH8M5JKXp4HOrI8MtCi" },
+  { name: "Maelo Ruiz", img: maelo, spotify: "https://open.spotify.com/artist/3qwDgYsxLyZ1HQTksPgkfG" },
+  { name: "Fruko y sus Tesos", img: fruko, spotify: "https://open.spotify.com/artist/0wnFifIYBfu4FPb2tDCdRA" },
 ];
 
 export default function LineupSection() {
@@ -48,8 +48,12 @@ export default function LineupSection() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
           {artists.map((a, i) => (
-            <motion.div
+            <motion.a
               key={a.name}
+              href={a.spotify}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Escuchar a ${a.name} en Spotify`}
               className="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -70,9 +74,12 @@ export default function LineupSection() {
                 <h3 className="font-heading text-sm md:text-lg text-foreground leading-tight">
                   {a.name}
                 </h3>
+                <span className="text-xs text-salsa-yellow/80 opacity-0 group-hover:opacity-100 transition-opacity">
+                  ▶ Escuchar en Spotify
+                </span>
               </div>
               <div className="absolute inset-0 border-2 border-salsa-yellow/0 group-hover:border-salsa-yellow/60 rounded-xl transition-colors duration-300" />
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
