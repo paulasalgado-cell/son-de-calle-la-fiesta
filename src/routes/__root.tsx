@@ -38,6 +38,8 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Son de Calle — Festival de Salsa · Bogotá 2026" },
       { name: "twitter:description", content: "El festival de salsa más grande de Bogotá. Grupo Niche, Rubén Blades, Marc Anthony y más. 21 de noviembre de 2026, Parque el Country." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9540eb3-0812-4240-a5f0-bc3433a024a9/id-preview-f2b50aac--182a4cae-d2f8-4c80-a2f5-4f37d9fcfa93.lovable.app-1776928564599.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9540eb3-0812-4240-a5f0-bc3433a024a9/id-preview-f2b50aac--182a4cae-d2f8-4c80-a2f5-4f37d9fcfa93.lovable.app-1776928564599.png" },
     ],
     links: [
       {
